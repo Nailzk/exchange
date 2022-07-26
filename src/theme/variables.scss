@@ -1,0 +1,14 @@
+// COLORS
+
+$bg-color: #1a1c1e;
+$primary-color: #675afe;
+$white: #fff;
+$black: #000;
+
+$gray-100: #f9f8fd;
+$gray-400: #999;
+
+// MIXINS 
+@mixin default-transition {
+    transition: all 0.5s ease-in-out;
+}
