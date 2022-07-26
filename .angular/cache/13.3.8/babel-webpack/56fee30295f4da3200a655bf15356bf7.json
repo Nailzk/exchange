@@ -1,0 +1,1 @@
+{"ast":null,"code":"/*\n * Public API Surface of header\n */\nexport * from './lib/header.component';\nexport * from './lib/header.module';","map":null,"metadata":{},"sourceType":"module"}

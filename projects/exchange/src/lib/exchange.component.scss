@@ -1,109 +1,114 @@
-@import '/src/theme/variables.scss';
+@import "/src/theme/variables.scss";
 
 section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+
+  @media screen and(max-width: $breakpoint-640) {
+    margin-top: 50px;
+  }
+
+  .wrapper {
+    width: 370px;
+    padding: 30px;
+    border-radius: 7px;
+    background: $white;
+    box-shadow: 7px 7px 20px rgba($color: $black, $alpha: 0.05);
+
+    header {
+      font-size: 28px;
+      font-weight: 300;
+      text-align: center;
+    }
+
+    .drop-list {
+      display: flex;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .form {
+      .amount {
+        p {
+          font-size: 18px;
+          margin-top: 10px;
+          margin-bottom: 5px;
+        }
+
+        input {
+          height: 50px;
+          font-size: 17px;
+          padding: 0 15px;
+          border: 1px solid $gray-400;
+          border-radius: 10px;
+          width: 90%;
+          outline: none;
+          text-align: center;
+          font-weight: 500;
+          @include default-transition;
+
+          &:hover {
+            border: 1px solid $primary-color;
+          }
+
+          &:focus {
+            border: 1px solid $primary-color;
+            padding: 0 14px;
+            box-shadow: rgba($color: $primary-color, $alpha: 0.35) 0px 5px 15px;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+
+  .exchange-rate {
+    margin: 10px 0px;
+  }
+
+  .btn-wrapper {
+    margin-top: 20px;
     display: flex;
-    align-items: center;
-    height: 87%;
     justify-content: center;
-
-    .wrapper {
-        width: 370px;
-        padding: 30px;
-        border-radius: 7px;
-        background: $white;
-        box-shadow: 7px 7px 20px rgba($color: $black, $alpha: 0.05);
-
-        header {
-            font-size: 28px;
-            font-weight: 300;
-            text-align: center;
-        }
-        .drop-list {
-            display: flex;
-            margin-top: 20px;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .form {
-            .amount {
-                p {
-                    font-size: 18px;
-                    margin-top: 10px;
-                    margin-bottom: 5px;
-                }
-
-                input {
-                    height: 50px;
-                    font-size: 17px;
-                    padding: 0 15px;
-                    border: 1px solid $gray;
-                    border-radius: 10px;
-                    width: 90%;
-                    outline: none;
-                    text-align: center;
-                    font-weight: 500;
-                    @include default-transition;
-
-                    &:hover {
-                        border: 1px solid $primary-color;
-                    }
-
-                    &:focus {
-                        border: 1px solid $primary-color;
-                        padding: 0 14px;
-                        box-shadow: rgba($color: $primary-color, $alpha: 0.35) 0px 5px 15px;
-                        outline: none;
-                    }
-                }
-            }
-        }
-    }
-
-    .exchange-rate {
-        margin: 10px 0px;
-    }
-
-    .btn-wrapper {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-    }
+  }
 }
 
 ::ng-deep {
-    .ng-select .ng-select-container {
-        padding: 10px 20px;
-        border-radius: 10px;
-        border: 1px solid $gray;
-        transition: all 0.5s ease-in-out;
+  .ng-select .ng-select-container {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid $gray-100;
+    transition: all 0.5s ease-in-out;
 
-        &:hover {
-            border: 1px solid $primary-color;
-            color: $primary-color;
-            cursor: pointer;
-        }
+    &:hover {
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      cursor: pointer;
     }
+  }
 
-    .ng-dropdown-panel .ng-dropdown-panel-items .ng-option {
-        text-align: center;
-        padding: 10px;
-        @include default-transition;
+  .ng-dropdown-panel .ng-dropdown-panel-items .ng-option {
+    text-align: center;
+    padding: 10px;
+    @include default-transition;
 
-        &:hover {
-            background-color: $gray-100;
-            cursor: pointer;
-            color: $primary-color;
-            transform: scale(1.01);
-        }
+    &:hover {
+      background-color: $gray-100;
+      cursor: pointer;
+      color: $primary-color;
+      transform: scale(1.01);
     }
+  }
 
-    .ng-dropdown-panel .scroll-host {
-        background-color: $white;
-        border-radius: 0px 0px 10px 10px;
-    }
+  .ng-dropdown-panel .scroll-host {
+    background-color: $white;
+    border-radius: 0px 0px 10px 10px;
+  }
 }
 
 .info {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }

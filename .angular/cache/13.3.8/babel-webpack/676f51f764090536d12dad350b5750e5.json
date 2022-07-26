@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  production: false,\n  converterApiKey: 'nW+IhPxH5hxLRD3RqITcfg==gDBORnpDthaBZ6HX',\n  converterApiUrl: 'https://api.api-ninjas.com/v1'\n};","map":null,"metadata":{},"sourceType":"module"}

@@ -1,12 +1,18 @@
-@import '/src/theme/variables.scss';
+@import "/src/theme/variables.scss";
 
 header {
-    border-bottom: 3px solid $primary-color;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    min-height: 120px;
+  border-bottom: 3px solid $primary-color;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  min-height: 120px;
+
+  @media screen and(max-width: $breakpoint-640) {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0px;
+  }
 }
