@@ -1,1 +1,0 @@
-{"ast":null,"code":"/*\n * Public API Surface of exchange\n */\nexport * from './lib/exchange.component';\nexport * from './lib/exchange.module';","map":null,"metadata":{},"sourceType":"module"}
