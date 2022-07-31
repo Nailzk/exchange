@@ -4,9 +4,9 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'exchange',
-    loadChildren: () => import('exchange').then((m) => m.ExchangeModule),
+    loadChildren: () => import('./exchange/exchange.module').then((m) => m.ExchangeModule),
   },
-  { path: '*', pathMatch: 'full', redirectTo: 'exchange' },
+  { path: '**', pathMatch: 'full', redirectTo: 'exchange' },
 ];
 
 @NgModule({

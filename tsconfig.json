@@ -23,10 +23,7 @@
     "paths": {
       "@env/*": ["src/environments/*"],
       "@app/*": ["src/app/*"],
-      "communication": ["projects/communication/index"],
-      "exchange": ["projects/exchange/index"],
-      "header": ["projects/header/index"],
-      "repositories": ["projects/repositories/index"]
+      "communication": ["projects/communication/index"]
     }
   },
   "angularCompilerOptions": {
