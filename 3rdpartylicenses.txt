@@ -21,10 +21,6 @@ MIT
 
 communication
 
-exchange
-
-header
-
 rxjs
 Apache-2.0
                                Apache License
